@@ -17,6 +17,10 @@ html {
   background: #eaeaea;
 }
 
+.subtext {
+  font-size: 0.8em;
+}
+
 .content {
   width: 90vw;
   margin: auto;
