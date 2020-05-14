@@ -1,0 +1,190 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*::-moz-selection {
+  background: #eaeaea;
+}
+
+*::selection {
+  background: #eaeaea;
+}
+
+.content {
+  width: 80vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    width: 90vw;
+  }
+}
+
+.header {
+  padding-bottom: 24px;
+  text-align: left;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.header .artist {
+  font-size: 1.5rem;
+  color: gray;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.header img {
+  float: right;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 500px) {
+  .header img {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+  }
+}
+
+.statement {
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 500px) {
+  .statement {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.s-container {
+  text-align: center;
+  margin-top: 75px;
+}
+
+.s-container .s .s-header {
+  font-size: 1.45rem;
+  margin: 20px auto;
+  font-weight: 600;
+}
+
+.s-container .s .s-text {
+  margin: 20px auto 30px auto;
+  font-size: 0.9rem;
+  width: 40vw;
+}
+
+@media screen and (max-width: 1000px) {
+  .s-container .s .s-text {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .s-container .s .s-text {
+    width: 90%;
+  }
+}
+
+.s-container .s img {
+  width: 75%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 500px) {
+  .s-container .s img {
+    width: 100%;
+  }
+}
+
+.s-container .s img.vert {
+  width: 40%;
+}
+
+@media screen and (max-width: 1000px) {
+  .s-container .s img.vert {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .s-container .s img.vert {
+    width: 100%;
+  }
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.spacer {
+  width: 20vw;
+  height: 100px;
+}
+
+.footer {
+  width: 100vw;
+  position: absolute;
+  left: 0;
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #eaeaea;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer img {
+  width: 30px;
+  height: 30px;
+  margin: auto 6px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.footer img:hover {
+  opacity: 0.8;
+}
+
+.footer .attr {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer .attr a {
+  text-decoration: underline;
+  color: #54548a;
+}
+
+a#back {
+  color: #454a8f;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+/*# sourceMappingURL=artist.css.map */
