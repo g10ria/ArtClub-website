@@ -128,6 +128,9 @@ html {
                 width: 30%;
                 order: 1;
             }
+            @media screen and (max-width: $mobile) {
+                width: 40%;
+            }
         }
         .across {
             display: flex;
