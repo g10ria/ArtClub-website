@@ -36,6 +36,10 @@ html {
     @media screen and (max-width: $mobile) {
         width: 90vw;
     }
+
+    .desc {
+        line-height: 160%;
+    }
 }
 
 h2 {
