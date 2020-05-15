@@ -100,13 +100,26 @@ html {
                 width: 100%;
             }
         }
+        img.medSmall {
+            width: 46%;
+            margin: 10px;
+            @media screen and (max-width: $tablet) {
+                width: 70%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                 margin: 10px 0;
+            }
+        }
         img.small {
             width: 40%;
+            margin: 10px;
             @media screen and (max-width: $tablet) {
                 width: 60%;
             }
             @media screen and (max-width: $mobile) {
                 width: 100%;
+                margin: 10px 0;
             }
         }
         img.tiny {

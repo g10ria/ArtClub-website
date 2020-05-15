@@ -131,8 +131,27 @@ html {
   }
 }
 
+.s-container .s img.medSmall {
+  width: 46%;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .s-container .s img.medSmall {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .s-container .s img.medSmall {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
 .s-container .s img.small {
   width: 40%;
+  margin: 10px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -144,6 +163,7 @@ html {
 @media screen and (max-width: 500px) {
   .s-container .s img.small {
     width: 100%;
+    margin: 10px 0;
   }
 }
 
