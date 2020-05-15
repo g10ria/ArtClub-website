@@ -123,10 +123,17 @@ html {
         img.teeny {
             width: 20%;
             margin: 10px;
+            @media screen and (max-width: $tablet) {
+                display: block;
+                width: 30%;
+                order: 1;
+            }
         }
         .across {
             display: flex;
+            flex-flow: row wrap;
             align-items: center;
+            justify-content: center;
         }
     }
 }
