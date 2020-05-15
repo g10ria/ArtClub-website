@@ -67,7 +67,7 @@ html {
     .s {
         .s-header {
             font-size: 1.45rem;
-            margin: 20px auto;
+            margin: 50px auto 20px auto;
             font-weight: 600;
         }
         .s-text {
@@ -91,13 +91,33 @@ html {
                 width: 100%;
             }
         }
-        img.vert {
+        img.med {
+            width: 50%;
+            @media screen and (max-width: $tablet) {
+                width: 70%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+            }
+        }
+        img.small {
             width: 40%;
             @media screen and (max-width: $tablet) {
                 width: 60%;
             }
             @media screen and (max-width: $mobile) {
                 width: 100%;
+            }
+        }
+        img.tiny {
+            width: 25%;
+            margin: 20px;
+            @media screen and (max-width: $tablet) {
+                // width: 70%;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 29%;
+                margin: 5px;
             }
         }
     }
@@ -118,7 +138,7 @@ h2 {
     width: 100vw;
     position: absolute;
     left: 0;
-    margin-top: 50px;
+    margin-top: 175px;
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #eaeaea;
@@ -158,5 +178,6 @@ a#back {
     text-align: left;
     margin-bottom: 5px;
     margin-top: 30px;
-    text-decoration: underline;
+    opacity: 0.5;
+    text-decoration: none;
 }

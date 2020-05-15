@@ -116,7 +116,7 @@ h2 {
                 padding-right: 0;
             }
             .p-text {
-                line-height: 150%;
+                line-height: 200%;
                 font-size: 0.9rem;
             }
             img {
@@ -124,7 +124,7 @@ h2 {
                 height: 75px;
                 border-radius: 50%;
                 margin-right: 30px;
-                margin-bottom: 12px;
+                margin-bottom: 5px;
                 float: left;
             }
         }
@@ -138,6 +138,7 @@ h2 {
     }
 
     button {
+        font-family: "Source Sans Pro", sans-serif;
         outline: none;
         padding: 15px 60px;
 
@@ -152,10 +153,10 @@ h2 {
 
         cursor: pointer;
 
-        transition: background-color 0.2s;
+        transition: opacity 0.1s;
 
         &:hover {
-            background-color: darkgray;
+            opacity: 0.8;
         }
     }
 }
