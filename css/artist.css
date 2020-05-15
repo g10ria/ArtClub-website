@@ -159,6 +159,12 @@ html {
   }
 }
 
+@media screen and (max-width: 500px) {
+  .s-container .s img.specialTiny {
+    width: 80%;
+  }
+}
+
 .s-container .s img.teeny {
   width: 20%;
   margin: 10px;
@@ -194,6 +200,14 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .s-container .s .across {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 
 h2 {
@@ -252,5 +266,19 @@ a#back {
   margin-top: 30px;
   opacity: 0.5;
   text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  iframe {
+    width: 81vw;
+    height: 45vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  iframe {
+    width: 90vw;
+    height: 50vw;
+  }
 }
 /*# sourceMappingURL=artist.css.map */
