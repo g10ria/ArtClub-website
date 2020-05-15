@@ -111,6 +111,20 @@ html {
                  margin: 10px 0;
             }
         }
+        img.heightBasedMed {
+            height: 35vh;
+            width: auto;
+            margin: 10px;
+            @media screen and (max-width: $tablet) {
+                width: 85%;
+                height: auto;
+            }
+            @media screen and (max-width: $mobile) {
+                width: 100%;
+                height: auto;
+                 margin: 10px 0;
+            }
+        }
         img.small {
             width: 40%;
             margin: 10px;

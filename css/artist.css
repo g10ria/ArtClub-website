@@ -149,6 +149,27 @@ html {
   }
 }
 
+.s-container .s img.heightBasedMed {
+  height: 35vh;
+  width: auto;
+  margin: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .s-container .s img.heightBasedMed {
+    width: 85%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .s-container .s img.heightBasedMed {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+}
+
 .s-container .s img.small {
   width: 40%;
   margin: 10px;
