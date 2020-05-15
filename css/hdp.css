@@ -45,6 +45,10 @@ html {
   }
 }
 
+.desc {
+  line-height: 160%;
+}
+
 h2 {
   font-family: "Archivo Narrow", sans-serif;
   font-size: 2rem;
