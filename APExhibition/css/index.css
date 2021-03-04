@@ -159,10 +159,15 @@ p, a {
   }
 
 @media (max-width: 400px) {
+    
+.caption-1 {
+    font-size: 0.9rem;
+}
     .gallery-grid {
       display: block;
     }
     .portfolio {
+        width: 90%;
         max-width: 90% ;
     }
   }
