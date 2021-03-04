@@ -1,0 +1,168 @@
+body {
+    background-color: black;
+    background-image: url("/media/IndexBackground.png");
+    background-repeat: repeat;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.gallery-header-link {
+    margin: 25px;
+}
+
+p, a {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.gallery-container {
+    width: 94vw;
+    max-height: 90vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 400px) {
+    .gallery-container {
+        height: auto;
+    }
+}
+
+.gallery-header {
+    margin-bottom: 50px;
+    font-size: 0.8rem;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+    max-height: 48%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+}
+
+.portfolio {
+    position: relative;
+    max-width: 16%;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+    width:100%; 
+    max-height:100%; 
+    object-fit:cover;
+    cursor: pointer;
+    display: block;
+}
+
+
+
+.caption-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* height: 100%; */
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+
+    padding: 10px;
+    padding-top: 20px;
+
+    cursor: pointer;
+}
+
+.portfolio:hover .caption-container {
+    opacity: 1 !important;
+  }
+
+  .portfolio:hover .thumbnail {
+      opacity: 0.3;
+      transition: .3s ease;
+  }
+
+.caption-1 {
+    font-weight: 700;
+    color: rgb(209, 209, 209);
+}
+
+.caption-2 {
+    font-family: 'Crimson Text', serif;
+    font-size: 0.8rem;
+    color: rgb(209, 209, 209);
+}
+
+@media (max-width: 800px) {
+    .portfolio {
+        max-width: 32% ;
+    }
+    .col {
+        max-height: none;
+    }
+  }
+
+@media (max-width: 400px) {
+    .gallery-grid {
+      display: block;
+    }
+    .portfolio {
+        max-width: 90% ;
+    }
+  }
