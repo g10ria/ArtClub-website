@@ -1,7 +1,7 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
 
 body {
-    background-image: url("/media/PortfolioBackground.png");
+    background-image: url("/APExhibition/media/PortfolioBackground.png");
     background-repeat: repeat;
 }
 
@@ -85,13 +85,13 @@ p, a {
 
 .portfolio-content {
     align-self: flex-start;
-    height: 88vh;
+    height: 100vh;
 }
 
 .portfolio-content-scroll {
     width: 100vw;
     height: auto;
-    height: 88vh;
+    height: 100vh;
     /* height: 100%; */
     /* height: 70vh; */
     padding-left: 25vw;
@@ -163,7 +163,7 @@ p, a {
 }
 
 @media (max-width: 850px) {
-    #large {
+    .large {
         display: none;
     }
     #small {

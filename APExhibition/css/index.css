@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    background-image: url("/media/IndexBackground.png");
+    background-image: url("/APExhibition/media/IndexBackground.png");
     background-repeat: repeat;
     margin: 0;
     width: 100%;
@@ -53,12 +53,13 @@ p, a {
 }
 
 .gallery-container {
-    width: 94vw;
-    max-height: 90vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    width: 70vw;
+    max-height: 96vh;
+    height: 96vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 
     display: flex;
     flex-direction: column;
@@ -69,6 +70,10 @@ p, a {
 @media (max-width: 400px) {
     .gallery-container {
         height: auto;
+
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
 }
 
@@ -80,13 +85,16 @@ p, a {
 .gallery-grid {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .col {
     flex: 1;
-    max-height: 48%;
+    max-height: 32%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -96,9 +104,9 @@ p, a {
 
 .portfolio {
     position: relative;
-    max-width: 16%;
+    max-width: 19%;
     text-align: left;
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 10px;
 }
 
@@ -159,6 +167,9 @@ p, a {
   }
 
 @media (max-width: 400px) {
+    .col {
+        justify-content: center;
+    }
     
 .caption-1 {
     font-size: 0.9rem;
@@ -169,5 +180,69 @@ p, a {
     .portfolio {
         width: 90%;
         max-width: 90% ;
+    }
+  }
+
+  .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      
+      z-index: 1;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .back {
+      z-index: -1;
+  }
+  
+  .overlay-background {
+    background-color: black;
+    position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      z-index: 1;
+      opacity : 0.6;
+      transition: opacity .5s;
+  }
+
+  .invis {
+      opacity: 0;
+      pointer-events: none;
+  }
+
+  .overlay-title {
+      font-weight: 700;
+    color: rgb(245, 245, 245);
+    font-size: 4rem;
+    cursor: pointer;
+    transition: opacity .5s;
+    text-align: center;
+  }
+
+  .overlay-title:hover {
+      opacity: 0.75;
+  }
+  
+  .back .overlay-title {
+      opacity: 0.2;
+  }
+
+  @media (max-width: 800px) {
+    .overlay-title {
+        font-size: 3rem;
+    }
+  }
+
+@media (max-width: 400px) {
+    .overlay-title {
+        font-size: 2.3rem;
     }
   }
