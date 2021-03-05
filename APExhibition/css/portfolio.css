@@ -21,11 +21,7 @@ p, a {
     -ms-animation: fadeIn ease 1s;
 }
 
-.fixedback {
-    position: fixed;
-    top: 5px;
-    left: 5px;
-}
+
 
 @keyframes fadeIn {
     0% {opacity:0;}
@@ -242,6 +238,12 @@ p, a {
     .tooltip {
         position: fixed;
         bottom: 7px;
-        left: 7px;
+        right: 7px;
         font-style: italic;
+    }
+
+    .fixedback {
+        position: fixed;
+        bottom: 7px;
+        left: 7px;
     }
