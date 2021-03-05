@@ -218,10 +218,18 @@ p, a {
       pointer-events: none;
   }
 
+  .overlay-big {
+    font-size: 3.75rem;
+  }
+
+  .overlay-small {
+      font-size: 2.5rem;
+  }
+
   .overlay-title {
       font-weight: 700;
     color: rgb(245, 245, 245);
-    font-size: 3.75rem;
+    
     cursor: pointer;
     transition: opacity .5s;
     text-align: center;
@@ -236,13 +244,19 @@ p, a {
   }
 
   @media (max-width: 800px) {
-    .overlay-title {
+    .overlay-big {
         font-size: 3rem;
+    }
+    .overlay-small {
+        font-size: 2rem;
     }
   }
 
 @media (max-width: 400px) {
-    .overlay-title {
+    .overlay-big {
         font-size: 2.3rem;
+    }
+    .overlay-small {
+        font-size: 1.6rem;
     }
   }
