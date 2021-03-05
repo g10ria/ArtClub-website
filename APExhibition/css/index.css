@@ -118,6 +118,9 @@ p, a {
     display: block;
 }
 
+.special {
+    cursor: default;
+}
 
 
 .caption-container {
@@ -137,6 +140,8 @@ p, a {
     cursor: pointer;
 }
 
+
+
 .portfolio:hover .caption-container {
     opacity: 1 !important;
   }
@@ -145,6 +150,11 @@ p, a {
       opacity: 0.3;
       transition: .3s ease;
   }
+
+  .nohover:hover .thumbnail {
+    opacity: 1;
+    transition: none;
+}
 
 .caption-1 {
     font-weight: 700;

@@ -24,6 +24,7 @@
     <div class="overlay-background">
 
     </div>
+
     <div class="overlay">
         <div class="overlay-title">
             <div class="overlay-big">2021 AP Studio Art Exhibition</div>
@@ -36,9 +37,13 @@
                 document.querySelector(".overlay").classList.add("back")
             })
         </script>
-        
-        
     </div>
+    <script>
+        if (localStorage.getItem("visited") == "true") {
+            document.querySelector(".overlay").classList.add("back");
+            document.querySelector(".overlay-background").remove();
+        }
+    </script>
     <div class="gallery-container">
         <!-- <div class="gallery-header">
             <div class="gallery-header-links-container">
@@ -54,8 +59,8 @@
                     <a href="/APExhibition/about.html">
                         <img class="thumbnail" src="media/ABOUT-01.png">
                         <div class="caption-container">
-                            <div class="caption-1">About the AP Portfolio</div>
-                            <div class="caption-2">Recommended to read first.</div>
+                            <div class="caption-1"></div>
+                            <div class="caption-2"></div>
                         </div>
                     </a>
                 </div>
@@ -192,6 +197,12 @@
                         </div>
                     </a>
                 </div>
+
+                <div class="portfolio nohover">
+                    <!-- <a href="/APExhibition/about.html"> -->
+                        <img class="thumbnail special" src="media/thankyou.png">
+                    <!-- </a> -->
+                </div>
                 
                 
 
@@ -200,5 +211,9 @@
         </div>
     </div>
 </body>
+
+<script>
+    localStorage.setItem('visited', 'true')
+</script>
 
 </html>
